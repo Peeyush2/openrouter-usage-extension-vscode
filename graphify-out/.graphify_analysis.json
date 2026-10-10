@@ -1,0 +1,356 @@
+{
+  "communities": {
+    "0": [
+      "eslint_config",
+      "package",
+      "package_activationevents",
+      "package_categories",
+      "package_description",
+      "package_displayname",
+      "package_engines",
+      "package_engines_vscode",
+      "package_extensionkind",
+      "package_license",
+      "package_main",
+      "package_name",
+      "package_overrides",
+      "package_overrides_diff",
+      "package_overrides_serialize_javascript",
+      "package_publisher",
+      "package_version",
+      "ref_eslint",
+      "ref_mocha",
+      "ref_npm_run_all",
+      "ref_types_mocha",
+      "ref_types_node",
+      "ref_types_vscode",
+      "ref_typescript",
+      "ref_typescript_eslint",
+      "ref_vscode_test_cli",
+      "ref_vscode_test_electron",
+      "ref_vscode_vsce",
+      "vscode_test"
+    ],
+    "1": [
+      "ref_node_assert",
+      "ref_vscode",
+      "src_api_accountcredits",
+      "src_api_keyusage",
+      "src_extension",
+      "src_monitor",
+      "src_monitor_apikeysecret",
+      "src_monitor_endpoint",
+      "src_monitor_managementkeysecret",
+      "src_monitor_usagestate",
+      "src_test_extension_test",
+      "src_test_extension_test_fakesecrets",
+      "src_test_usage_test",
+      "src_test_usage_test_key",
+      "src_usage",
+      "src_usage_formatoptionalusd",
+      "src_usage_formatusd",
+      "src_usage_getlimitusage",
+      "src_usage_limitusage",
+      "src_usageview",
+      "src_usageview_updatestatusbar",
+      "src_usageview_usageitem",
+      "src_usageview_usageitem_constructor",
+      "src_usageview_usageview",
+      "src_usageview_usageview_dispose",
+      "src_usageview_usageview_getchildren",
+      "src_usageview_usageview_gettreeitem",
+      "src_usageview_usageview_update"
+    ],
+    "2": [
+      "package_configuration_properties",
+      "package_configuration_title",
+      "package_contributes_configuration",
+      "package_openrouterusage_autorefresh_default",
+      "package_openrouterusage_autorefresh_description",
+      "package_openrouterusage_autorefresh_scope",
+      "package_openrouterusage_autorefresh_type",
+      "package_openrouterusage_refreshintervalseconds_default",
+      "package_openrouterusage_refreshintervalseconds_description",
+      "package_openrouterusage_refreshintervalseconds_maximum",
+      "package_openrouterusage_refreshintervalseconds_minimum",
+      "package_openrouterusage_refreshintervalseconds_scope",
+      "package_openrouterusage_refreshintervalseconds_type",
+      "package_openrouterusage_showstatusbar_default",
+      "package_openrouterusage_showstatusbar_description",
+      "package_openrouterusage_showstatusbar_scope",
+      "package_openrouterusage_showstatusbar_type",
+      "package_openrouterusage_warningthresholdpercent_default",
+      "package_openrouterusage_warningthresholdpercent_description",
+      "package_openrouterusage_warningthresholdpercent_maximum",
+      "package_openrouterusage_warningthresholdpercent_minimum",
+      "package_openrouterusage_warningthresholdpercent_scope",
+      "package_openrouterusage_warningthresholdpercent_type",
+      "package_properties_openrouterusage_autorefresh",
+      "package_properties_openrouterusage_refreshintervalseconds",
+      "package_properties_openrouterusage_showstatusbar",
+      "package_properties_openrouterusage_warningthresholdpercent"
+    ],
+    "3": [
+      "src_api",
+      "src_api_number",
+      "src_api_object",
+      "src_api_openrouterclient",
+      "src_api_openrouterclient_constructor",
+      "src_api_openrouterclient_getaccountcredits",
+      "src_api_openrouterclient_getkeyusage",
+      "src_api_openrouterclient_request",
+      "src_api_openroutererror",
+      "src_api_openroutererror_constructor",
+      "src_api_optionalnumber",
+      "src_api_parseaccountcredits",
+      "src_api_parsekeyusage",
+      "src_api_retryaftermilliseconds",
+      "src_api_validateapikey",
+      "src_credentials",
+      "src_credentials_validateandsavekey",
+      "src_test_api_test"
+    ],
+    "4": [
+      "package_scripts",
+      "package_scripts_check_types",
+      "package_scripts_compile",
+      "package_scripts_compile_tests",
+      "package_scripts_lint",
+      "package_scripts_package",
+      "package_scripts_package_vsix",
+      "package_scripts_pretest",
+      "package_scripts_test",
+      "package_scripts_test_unit",
+      "package_scripts_vscode_prepublish",
+      "package_scripts_watch",
+      "package_scripts_watch_esbuild",
+      "package_scripts_watch_tests",
+      "package_scripts_watch_tsc"
+    ],
+    "5": [
+      "package_devdependencies",
+      "package_devdependencies_esbuild",
+      "package_devdependencies_eslint",
+      "package_devdependencies_mocha",
+      "package_devdependencies_npm_run_all",
+      "package_devdependencies_types_mocha",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_vscode",
+      "package_devdependencies_typescript",
+      "package_devdependencies_typescript_eslint",
+      "package_devdependencies_vscode_test_cli",
+      "package_devdependencies_vscode_test_electron",
+      "package_devdependencies_vscode_vsce"
+    ],
+    "6": [
+      "src_extension_activate",
+      "src_monitor_safeerror",
+      "src_monitor_usagemonitor",
+      "src_monitor_usagemonitor_configuretimer",
+      "src_monitor_usagemonitor_constructor",
+      "src_monitor_usagemonitor_dispose",
+      "src_monitor_usagemonitor_fetchendpoint",
+      "src_monitor_usagemonitor_fetchusage",
+      "src_monitor_usagemonitor_readandfetch",
+      "src_monitor_usagemonitor_refresh",
+      "src_monitor_usagemonitor_refresherrormessage",
+      "src_monitor_usagemonitor_secretschanged",
+      "src_monitor_usagemonitor_start"
+    ],
+    "7": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_rootdir",
+      "tsconfig_compileroptions_sourcemap",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_types"
+    ],
+    "8": [
+      "esbuild_esbuild",
+      "esbuild_esbuildproblemmatcherplugin",
+      "esbuild_js_esbuild",
+      "esbuild_main",
+      "esbuild_production",
+      "esbuild_watch",
+      "ref_esbuild"
+    ],
+    "9": [
+      "package_contributes",
+      "package_contributes_commands",
+      "package_contributes_menus",
+      "package_contributes_views",
+      "package_contributes_viewswelcome",
+      "package_menus_view_title",
+      "package_views_explorer"
+    ],
+    "10": [
+      "package_capabilities",
+      "package_capabilities_untrustedworkspaces",
+      "package_capabilities_virtualworkspaces",
+      "package_untrustedworkspaces_supported",
+      "package_virtualworkspaces_supported"
+    ]
+  },
+  "cohesion": {
+    "0": 0.06896551724137931,
+    "1": 0.15873015873015872,
+    "2": 0.07407407407407407,
+    "3": 0.29411764705882354,
+    "4": 0.13333333333333333,
+    "5": 0.15384615384615385,
+    "6": 0.32051282051282054,
+    "7": 0.2222222222222222,
+    "8": 0.3333333333333333,
+    "9": 0.2857142857142857,
+    "10": 0.4
+  },
+  "gods": [
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 15
+    },
+    {
+      "id": "src_monitor_usagemonitor",
+      "label": "UsageMonitor",
+      "degree": 14
+    },
+    {
+      "id": "src_extension_activate",
+      "label": "activate()",
+      "degree": 14
+    },
+    {
+      "id": "src_api_openrouterclient",
+      "label": "OpenRouterClient",
+      "degree": 11
+    },
+    {
+      "id": "src_api_openroutererror",
+      "label": "OpenRouterError",
+      "degree": 10
+    },
+    {
+      "id": "src_usageview_usageview",
+      "label": "UsageView",
+      "degree": 9
+    },
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 8
+    },
+    {
+      "id": "src_api_parsekeyusage",
+      "label": "parseKeyUsage()",
+      "degree": 7
+    },
+    {
+      "id": "src_credentials_validateandsavekey",
+      "label": "validateAndSaveKey()",
+      "degree": 7
+    },
+    {
+      "id": "package_properties_openrouterusage_refreshintervalseconds",
+      "label": "openrouterUsage.refreshIntervalSeconds",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "activate()",
+      "target": "validateApiKey()",
+      "source_files": [
+        "src/extension.ts",
+        "src/api.ts"
+      ],
+      "confidence": "INFERRED",
+      "relation": "indirect_call",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "activate()",
+      "target": "UsageView",
+      "source_files": [
+        "src/extension.ts",
+        "src/usageView.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "activate()",
+      "target": "OpenRouterClient",
+      "source_files": [
+        "src/extension.ts",
+        "src/api.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "activate()",
+      "target": "updateStatusBar()",
+      "source_files": [
+        "src/extension.ts",
+        "src/usageView.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "activate()",
+      "target": "validateAndSaveKey()",
+      "source_files": [
+        "src/extension.ts",
+        "src/credentials.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `contributes` connect `contributes` to `package.json`, `openrouterUsage.refreshIntervalSeconds`?",
+      "why": "High betweenness centrality (0.171) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 6 inferred relationships involving `activate()` (e.g. with `validateApiKey()` and `.configureTimer()`) actually correct?",
+      "why": "`activate()` has 6 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `eslint`, `mocha`, `npm-run-all` to the rest of the system?",
+      "why": "9 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `package.json` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `configuration` connect `openrouterUsage.refreshIntervalSeconds` to `contributes`?",
+      "why": "High betweenness centrality (0.139) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `openrouterUsage.refreshIntervalSeconds` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `scripts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected."
+    }
+  ]
+}
