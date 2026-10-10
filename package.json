@@ -1,0 +1,171 @@
+{
+  "name": "openrouter-usage",
+  "displayName": "OpenRouter Usage",
+  "description": "Monitor OpenRouter API key usage and remaining limits in VS Code.",
+  "version": "0.0.2",
+  "publisher": "local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.140.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": {
+      "supported": true
+    }
+  },
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "openrouterUsage.setApiKey",
+        "title": "Set API Key",
+        "category": "OpenRouter Usage",
+        "icon": "$(key)"
+      },
+      {
+        "command": "openrouterUsage.setManagementKey",
+        "title": "Set Management Key (Account Credits)",
+        "category": "OpenRouter Usage"
+      },
+      {
+        "command": "openrouterUsage.removeApiKey",
+        "title": "Remove API Key",
+        "category": "OpenRouter Usage"
+      },
+      {
+        "command": "openrouterUsage.removeManagementKey",
+        "title": "Remove Management Key",
+        "category": "OpenRouter Usage"
+      },
+      {
+        "command": "openrouterUsage.refresh",
+        "title": "Refresh Usage",
+        "category": "OpenRouter Usage",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "openrouterUsage.showUsage",
+        "title": "Show Usage",
+        "category": "OpenRouter Usage"
+      },
+      {
+        "command": "openrouterUsage.openDashboard",
+        "title": "Open Dashboard",
+        "category": "OpenRouter Usage",
+        "icon": "$(link-external)"
+      }
+    ],
+    "views": {
+      "explorer": [
+        {
+          "id": "openrouterUsage.details",
+          "name": "OpenRouter Usage"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "openrouterUsage.details",
+        "contents": "Track spending and remaining limits without leaving VS Code.\n[Set API Key](command:openrouterUsage.setApiKey)\nKeys are stored in VS Code SecretStorage, never in settings."
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "openrouterUsage.refresh",
+          "when": "view == openrouterUsage.details",
+          "group": "navigation@1"
+        },
+        {
+          "command": "openrouterUsage.setApiKey",
+          "when": "view == openrouterUsage.details",
+          "group": "navigation@2"
+        },
+        {
+          "command": "openrouterUsage.openDashboard",
+          "when": "view == openrouterUsage.details",
+          "group": "navigation@3"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "OpenRouter Usage",
+      "properties": {
+        "openrouterUsage.refreshIntervalSeconds": {
+          "type": "integer",
+          "default": 60,
+          "minimum": 15,
+          "maximum": 3600,
+          "scope": "application",
+          "description": "Automatic refresh interval in seconds."
+        },
+        "openrouterUsage.autoRefresh": {
+          "type": "boolean",
+          "default": true,
+          "scope": "application",
+          "description": "Automatically refresh saved keys. Manual refresh is always available."
+        },
+        "openrouterUsage.showStatusBar": {
+          "type": "boolean",
+          "default": true,
+          "scope": "application",
+          "description": "Show remaining key credits (or all-time spending for uncapped keys) in the status bar."
+        },
+        "openrouterUsage.warningThresholdPercent": {
+          "type": "integer",
+          "default": 80,
+          "minimum": 1,
+          "maximum": 100,
+          "scope": "application",
+          "description": "Highlight the status bar when the current key spending cap reaches this percentage."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test",
+    "test:unit": "npm run compile-tests && mocha --ui tdd out/test/api.test.js out/test/usage.test.js",
+    "package:vsix": "vsce package --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "@types/vscode": "^1.140.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
+    "@vscode/vsce": "^4.0.0",
+    "esbuild": "^0.28.1",
+    "eslint": "^10.5.0",
+    "mocha": "^12.0.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.61.1"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}
